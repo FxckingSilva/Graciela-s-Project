@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecatech</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #020617;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 10px 20px;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MECATECH</h1>
+    <p>Innovación en tecnología y mecatrónica</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+    <h2>Soluciones en Mecatrónica</h2>
+    <p>Diseño, automatización y desarrollo tecnológico</p>
+    <button>Contáctanos</button>
+</section>
+
+<section class="section" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Automatización</h3>
+            <p>Diseño de sistemas automatizados para industria.</p>
+        </div>
+
+        <div class="card">
+            <h3>Electrónica</h3>
+            <p>Desarrollo y reparación de circuitos electrónicos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Diseño Mecánico</h3>
+            <p>Creación de estructuras y mecanismos.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="nosotros">
+    <h2>Nosotros</h2>
+    <p>
+        Mecatech es un proyecto enfocado en el desarrollo de soluciones tecnológicas
+        combinando mecánica, electrónica y programación para innovar en la industria.
+    </p>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: contacto@mecatech.com</p>
+    <p>Tel: 449-000-0000</p>
+</section>
+
+<footer>
+    <p>© 2026 Mecatech - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
