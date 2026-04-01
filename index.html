@@ -11,6 +11,7 @@ body {
     font-family: "Times New Roman", serif;
     background: #020617;
     color: #e2e8f0;
+    font-size: 22px;
 }
 
 /* NAV */
@@ -18,10 +19,10 @@ nav {
     position: fixed;
     width: 100%;
     background: #0ea5e9;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     z-index: 1000;
 }
 
@@ -29,45 +30,56 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 22px;
 }
 
 /* HERO */
 .hero {
-    padding: 100px 20px 40px;
+    padding: 120px 20px 60px;
     text-align: center;
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
 }
 
 /* SECTIONS */
 .section {
-    padding: 40px 20px;
-    max-width: 1100px;
+    padding: 60px 20px;
+    max-width: 1200px;
     margin: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h2 {
-    border-left: 6px solid #0ea5e9;
-    padding-left: 10px;
+    border-left: 8px solid #0ea5e9;
+    padding-left: 15px;
     color: #38bdf8;
+    font-size: 40px;
 }
 
 /* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 22px;
 }
 
 th {
     background: #0ea5e9;
     color: white;
-    padding: 10px;
+    padding: 15px;
 }
 
 td {
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1px solid #334155;
 }
 
@@ -79,21 +91,21 @@ td {
 /* CARDS */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 25px;
 }
 
 .card {
     background: #0f172a;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 15px;
     border: 1px solid #0ea5e9;
+    transition: 0.4s;
 }
 
-/* CHECK */
-.check {
-    color: #0ea5e9;
-    font-weight: bold;
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 0 20px #0ea5e9;
 }
 
 /* FLOAT */
@@ -109,8 +121,20 @@ td {
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background: #020617;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>
 </head>
@@ -131,202 +155,75 @@ footer {
 <p><b>Innovation in Automation and Industrial Technology</b></p>
 </section>
 
-<!-- ABOUT -->
 <section class="section" id="about">
 <h2>ABOUT MECHATECH</h2>
-
 <div class="card">
-Mechatech is focused on the design, development, and manufacturing of customized automation solutions. We integrate mechanics, electronics, control systems, and programming to deliver functional and scalable industrial systems.
+Mechatech develops advanced automation solutions integrating mechanics, electronics, and control systems for industrial applications.
 </div>
 </section>
 
-<!-- SERVICES -->
 <section class="section" id="services">
 <h2>SOLUTIONS & SERVICES</h2>
 
 <table>
-<tr>
-<th>Project Type</th>
-<th>Features</th>
-<th>Price</th>
-</tr>
-
-<tr>
-<td>Automated Conveyor Belt</td>
-<td>Modular structure, speed control, detection sensors</td>
-<td class="price">$35,000 MXN</td>
-</tr>
-
-<tr>
-<td>Guided Vehicle (AGV)</td>
-<td>Line-following or predefined navigation</td>
-<td class="price">$55,000 MXN</td>
-</tr>
-
-<tr>
-<td>Robotic Arm</td>
-<td>3–4 DOF, programmed control</td>
-<td class="price">$60,000 MXN</td>
-</tr>
-
-<tr>
-<td>Customized Projects</td>
-<td>Full integration of mechanical, electrical and control systems</td>
-<td class="price">From $80,000 MXN</td>
-</tr>
-
+<tr><th>Project</th><th>Features</th><th>Price</th></tr>
+<tr><td>Conveyor Belt</td><td>Speed control, sensors</td><td class="price">$35,000</td></tr>
+<tr><td>AGV</td><td>Navigation system</td><td class="price">$55,000</td></tr>
+<tr><td>Robotic Arm</td><td>3-4 DOF</td><td class="price">$60,000</td></tr>
+<tr><td>Custom</td><td>Full integration</td><td class="price">$80,000+</td></tr>
 </table>
 </section>
 
-<!-- PROJECTS -->
 <section class="section" id="projects">
-<h2>PROJECT EXPERIENCE / CASE STUDIES</h2>
-
+<h2>PROJECTS</h2>
 <div class="grid">
 
 <div class="card">
-<h3>Nissan – Conveyor System Optimization</h3>
-
-<p><b>Problem:</b> Production delays due to inconsistent conveyor speed.</p>
-
-<p><b>Solution:</b> Modular conveyor with sensors and speed control.</p>
-
-<p><b>Features:</b><br>
-- Speed control<br>
-- Detection sensors<br>
-- Modular structure</p>
-
-<p><b>Results:</b><br>
-- Increased efficiency<br>
-- Reduced errors<br>
-- Continuous workflow</p>
+<b>Nissan</b><br>
+Problem: Delays<br>
+Solution: Smart conveyor<br>
+Result: +Efficiency
 </div>
 
 <div class="card">
-<h3>Jatco – AGV Transport System</h3>
-
-<p><b>Problem:</b> Inefficient internal logistics.</p>
-
-<p><b>Solution:</b> Automated guided vehicle system.</p>
-
-<p><b>Features:</b><br>
-- Line navigation<br>
-- Obstacle detection<br>
-- Autonomous movement</p>
-
-<p><b>Results:</b><br>
-- Faster transport<br>
-- Less labor dependency<br>
-- Better workflow</p>
+<b>Jatco</b><br>
+Problem: Transport issues<br>
+Solution: AGV<br>
+Result: Faster workflow
 </div>
 
 </div>
 </section>
 
-<!-- MARKET -->
 <section class="section" id="market">
-<h2>MARKET FOCUS</h2>
-
+<h2>MARKET</h2>
 <div class="grid">
-
-<div class="card">
-<h3>Education</h3>
-<p>Support for engineering students through projects and learning systems.</p>
-</div>
-
-<div class="card">
-<h3>Developers</h3>
-<p>Support for independent engineers and prototypes.</p>
-</div>
-
-<div class="card">
-<h3>Industry</h3>
-<p>Automation solutions for manufacturing and logistics companies.</p>
-</div>
-
+<div class="card">Education</div>
+<div class="card">Developers</div>
+<div class="card">Industry</div>
 </div>
 </section>
 
-<!-- TEAM -->
 <section class="section" id="team">
 <h2>TEAM</h2>
-
 <div class="grid">
-
-<div class="card">
-<b>Bryan Eduardo Lomeli Jauregui</b><br>
-<b>Role:</b> Systems Audit Responsible<br>
-<b>Skills:</b> Analysis, documentation, communication<br>
-<b>Knowledge:</b> Industrial processes, flowcharts, automation basics<br>
-<b>Experience:</b> Academic projects and internships
-</div>
-
-<div class="card">
-<b>Jose Alberto Silva Campos</b><br>
-<b>Role:</b> Machinery Design Responsible<br>
-<b>Skills:</b> CAD design, teamwork<br>
-<b>Knowledge:</b> Mechanics, sensors, actuators<br>
-<b>Experience:</b> University projects
-</div>
-
-<div class="card">
-<b>Abraham Pérez Velázquez</b><br>
-<b>Role:</b> Manufacturing Responsible<br>
-<b>Skills:</b> Tools, wiring, testing<br>
-<b>Knowledge:</b> Manufacturing processes<br>
-<b>Experience:</b> Labs and workshops
-</div>
-
-<div class="card">
-<b>Ricardo Jetzrael Diaz Cruz</b><br>
-<b>Role:</b> Control & Programming<br>
-<b>Skills:</b> PLC, coding, logic<br>
-<b>Knowledge:</b> Control systems, sensors<br>
-<b>Experience:</b> Academic projects
-</div>
-
-<div class="card">
-<b>Luis Pedro González Martinez</b><br>
-<b>Role:</b> Documentation & Support<br>
-<b>Skills:</b> Writing, communication<br>
-<b>Knowledge:</b> Mechatronic systems<br>
-<b>Experience:</b> Academic documentation
-</div>
-
+<div class="card"><b>Jose Silva</b><br>Mechanical Design</div>
+<div class="card"><b>Bryan Lomeli</b><br>Audit</div>
+<div class="card"><b>Abraham Perez</b><br>Manufacturing</div>
+<div class="card"><b>Ricardo Diaz</b><br>Programming</div>
+<div class="card"><b>Luis Gonzalez</b><br>Documentation</div>
 </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
 <h2>CONTACT</h2>
 
 <p><b>Phone:</b> 4494015501</p>
 
-<p>
-<a href="https://wa.me/524494015501" style="color:#25D366;">
-<b>Send WhatsApp Message</b>
-</a>
-</p>
-
-<p>
-<a href="mailto:mecatech@gmail.com" style="color:#38bdf8;">
-<b>Send Email (Gmail)</b>
-</a>
-</p>
-
-<p><b>Follow us:</b></p>
-
-<p>
-<a href="https://instagram.com/mecatech" target="_blank" style="color:#38bdf8;">
-📸 Instagram: @mecatech
-</a>
-</p>
-
-<p>
-<a href="https://facebook.com/mecatech" target="_blank" style="color:#38bdf8;">
-📘 Facebook: Mecatech
-</a>
-</p>
+<p><a href="https://wa.me/524494015501">WhatsApp</a></p>
+<p><a href="mailto:mecatech@gmail.com">Email</a></p>
+<p><a href="#">Instagram</a></p>
+<p><a href="#">Facebook</a></p>
 
 </section>
 
@@ -337,6 +234,22 @@ Mechatech is focused on the design, development, and manufacturing of customized
 <footer>
 <p>© 2026 Mecatech</p>
 </footer>
+
+<script>
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+    const trigger = window.innerHeight * 0.85;
+
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+
+        if(top < trigger){
+            sec.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
