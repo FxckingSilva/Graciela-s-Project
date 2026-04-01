@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,11 @@
 body {
     margin: 0;
     font-family: "Times New Roman", serif;
-    background: #0f172a;
-    color: white;
-    font-size: 18px;
+    background: #f5f5f5;
+    color: #1e293b;
 }
 
+/* NAV */
 nav {
     position: fixed;
     width: 100%;
@@ -22,6 +22,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
+    z-index: 1000;
 }
 
 nav a {
@@ -30,6 +31,7 @@ nav a {
     font-weight: bold;
 }
 
+/* HERO */
 .hero {
     padding: 100px 20px 40px;
     text-align: center;
@@ -39,38 +41,62 @@ nav a {
     width: 150px;
 }
 
-/* SECCIONES */
+/* SECTIONS */
 .section {
     padding: 40px 20px;
     max-width: 1100px;
     margin: auto;
 }
 
-/* GRID */
+h2 {
+    border-left: 6px solid red;
+    padding-left: 10px;
+    color: #b91c1c;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #b91c1c;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.price {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+/* CARDS */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 20px;
 }
 
-/* TARJETAS */
 .card {
-    background: #1e293b;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    border-left: 5px solid #0ea5e9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: #38bdf8;
+/* CHECK LIST */
+.check {
+    color: red;
+    font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-}
-
+/* FLOAT WHATSAPP */
 .float {
     position: fixed;
     bottom: 20px;
@@ -79,131 +105,137 @@ footer {
     padding: 15px;
     border-radius: 50%;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: white;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-<a href="#empresa">Empresa</a>
-<a href="#producto">Productos</a>
-<a href="#equipo">Equipo</a>
-<a href="#clientes">Clientes</a>
-<a href="#ventajas">Ventajas</a>
-<a href="#contacto">Contacto</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#market">Market</a>
+<a href="#team">Team</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
 <img src="logo.png" class="logo">
-<p><b>Innovación en automatización y tecnología industrial</b></p>
+<p><b>Innovation in Automation and Industrial Technology</b></p>
 </section>
 
-<!-- EMPRESA -->
-<section class="section" id="empresa">
-<h2><b>Información de la Empresa</b></h2>
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>ABOUT MECHATECH AUTOMATION</h2>
 
-<p><b>Mecatech</b> es una empresa dedicada al desarrollo de soluciones tecnológicas en el área de la mecatrónica, integrando mecánica, electrónica y programación para resolver problemas industriales.</p>
-
-<p><b>Misión:</b> Desarrollar soluciones innovadoras que mejoren la eficiencia industrial.</p>
-<p><b>Visión:</b> Ser líderes en automatización tecnológica.</p>
-<p><b>Valores:</b> Innovación, calidad, compromiso, responsabilidad.</p>
-<p><b>Ubicación:</b> Aguascalientes, México.</p>
+<div class="card">
+MechaTech Automation is focused on the design, development, and manufacturing of customized automation solutions. We integrate mechanics, electronics, control systems, and programming to deliver functional, educational, and scalable machinery for industrial and innovative needs.
+</div>
 </section>
 
-<!-- PRODUCTOS -->
-<section class="section" id="producto">
-<h2><b>Productos y Servicios</b></h2>
+<!-- SERVICES -->
+<section class="section" id="services">
+<h2>SOLUTIONS & SERVICES</h2>
+
+<table>
+<tr>
+<th>Project Type</th>
+<th>Features</th>
+<th>Estimated Price</th>
+</tr>
+
+<tr>
+<td><b>Automated Conveyor Belt</b></td>
+<td>Modular structure, speed control, detection sensors.</td>
+<td class="price">$35,000 MXN</td>
+</tr>
+
+<tr>
+<td><b>Guided Vehicle (AGV)</b></td>
+<td>Line-following or predefined navigation.</td>
+<td class="price">$55,000 MXN</td>
+</tr>
+
+<tr>
+<td><b>Robotic Arm</b></td>
+<td>3-4 degrees of freedom, programmed control.</td>
+<td class="price">$60,000 MXN</td>
+</tr>
+
+<tr>
+<td><b>Customized Projects</b></td>
+<td>Full integration of mechanical, electrical and control.</td>
+<td class="price">From $80,000 MXN</td>
+</tr>
+
+</table>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="section">
+<h2>WHY CHOOSE MECHATECH</h2>
+
+<div class="card">
+<p><span class="check">✔</span> Turnkey solutions from design to commissioning.</p>
+<p><span class="check">✔</span> Technical audits to identify improvements.</p>
+<p><span class="check">✔</span> Complete documentation included.</p>
+<p><span class="check">✔</span> Scalable and flexible design.</p>
+</div>
+</section>
+
+<!-- MARKET -->
+<section class="section" id="market">
+<h2>MARKET FOCUS</h2>
 
 <div class="grid">
 
 <div class="card">
-<b>Automatización Industrial</b><br><br>
-<b>Características:</b> Implementación de sistemas automáticos.<br>
-<b>Ventajas:</b> Reduce errores y mejora productividad.<br>
-<b>Precio:</b> Variable según proyecto.<br>
-<b>Servicios extra:</b> mantenimiento y soporte.<br>
-<b>Políticas:</b> entrega puntual y garantía de calidad.
+<h3>Education</h3>
+<p>Support for engineering students (18-25) through academic projects and learning kits.</p>
 </div>
 
 <div class="card">
-<b>Electrónica</b><br><br>
-<b>Características:</b> Diseño y reparación de circuitos.<br>
-<b>Ventajas:</b> Soluciones rápidas y eficientes.<br>
-<b>Precio:</b> Accesible.<br>
-<b>Servicios extra:</b> diagnóstico técnico.<br>
-<b>Políticas:</b> revisión previa y garantía.
+<h3>Independent Developers</h3>
+<p>Providing components and guidance for engineers working on prototypes.</p>
 </div>
 
 <div class="card">
-<b>Diseño Mecánico</b><br><br>
-<b>Características:</b> Diseño de piezas y maquinaria.<br>
-<b>Ventajas:</b> Adaptado a necesidades del cliente.<br>
-<b>Precio:</b> Según complejidad.<br>
-<b>Servicios extra:</b> asesoría técnica.<br>
-<b>Políticas:</b> cumplimiento de requisitos.
+<h3>Industrial Sector</h3>
+<p>Companies seeking automation, optimization and training.</p>
 </div>
 
 </div>
 </section>
 
-<!-- EQUIPO -->
-<section class="section" id="equipo">
-<h2><b>Equipo de Trabajo</b></h2>
-
-<p>Equipo multidisciplinario con conocimientos en electrónica, mecánica y programación.</p>
+<!-- TEAM -->
+<section class="section" id="team">
+<h2>TEAM</h2>
 
 <div class="grid">
-<div class="card"><b>Silva Campos Jose Alberto</b><br>Diseño mecánico</div>
-<div class="card"><b>Lomeli Jauregui Bryan</b><br>Auditoría de sistemas</div>
-<div class="card"><b>Pérez Velázquez Abraham</b><br>Manufactura</div>
-<div class="card"><b>Diaz Cruz Ricardo</b><br>Programación</div>
-<div class="card"><b>González Martinez Luis</b><br>Documentación</div>
+
+<div class="card"><b>Bryan Lomeli</b><br>Systems Audit</div>
+<div class="card"><b>Jose Silva</b><br>Mechanical Design</div>
+<div class="card"><b>Abraham Pérez</b><br>Manufacturing</div>
+<div class="card"><b>Ricardo Diaz</b><br>Programming</div>
+<div class="card"><b>Luis González</b><br>Documentation</div>
+
 </div>
 </section>
 
-<!-- CLIENTES -->
-<section class="section" id="clientes">
-<h2><b>Clientes y Mercado</b></h2>
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>CONTACT US</h2>
 
-<p><b>Mercado objetivo:</b> Empresas, talleres e industrias que buscan mejorar sus procesos.</p>
-
-<p><b>Problemas que resolvemos:</b></p>
-<ul>
-<li>Procesos manuales ineficientes</li>
-<li>Fallas en maquinaria</li>
-<li>Baja productividad</li>
-</ul>
-
-<p><b>Ejemplos de clientes:</b></p>
-<ul>
-<li>Talleres mecánicos</li>
-<li>Pequeñas industrias</li>
-<li>Proyectos escolares</li>
-</ul>
-
-<p><b>Opinión:</b> "Servicio confiable y eficiente."</p>
-</section>
-
-<!-- VENTAJAS -->
-<section class="section" id="ventajas">
-<h2><b>Ventajas Competitivas</b></h2>
-
-<ul>
-<li>Precios accesibles</li>
-<li>Soluciones personalizadas</li>
-<li>Atención directa</li>
-<li>Innovación tecnológica</li>
-</ul>
-</section>
-
-<!-- CONTACTO -->
-<section class="section" id="contacto">
-<h2><b>Contacto</b></h2>
-
-<p><b>Tel:</b> 4494015501</p>
+<p><b>Phone:</b> 4494015501</p>
 
 <a href="https://wa.me/524494015501" style="color:#25D366;">
-<b>Enviar mensaje por WhatsApp</b>
+Send WhatsApp Message
 </a>
 </section>
 
@@ -212,7 +244,7 @@ footer {
 </a>
 
 <footer>
-<p><b>© 2026 Mecatech</b></p>
+<p>© 2026 Mecatech</p>
 </footer>
 
 </body>
