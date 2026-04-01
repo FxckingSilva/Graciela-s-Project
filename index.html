@@ -22,6 +22,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
+    z-index: 1000;
 }
 
 nav a {
@@ -89,7 +90,7 @@ td {
     border: 1px solid #0ea5e9;
 }
 
-/* CHECK LIST */
+/* CHECK */
 .check {
     color: #0ea5e9;
     font-weight: bold;
@@ -118,6 +119,7 @@ footer {
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#projects">Projects</a>
 <a href="#market">Market</a>
 <a href="#team">Team</a>
 <a href="#contact">Contact</a>
@@ -150,39 +152,73 @@ Mechatech is focused on the design, development, and manufacturing of customized
 
 <tr>
 <td>Automated Conveyor Belt</td>
-<td>Modular structure, speed control, sensors</td>
+<td>Modular structure, speed control, detection sensors</td>
 <td class="price">$35,000 MXN</td>
 </tr>
 
 <tr>
-<td>AGV</td>
-<td>Line navigation system</td>
+<td>Guided Vehicle (AGV)</td>
+<td>Line-following or predefined navigation</td>
 <td class="price">$55,000 MXN</td>
 </tr>
 
 <tr>
 <td>Robotic Arm</td>
-<td>3-4 DOF, programmed control</td>
+<td>3–4 DOF, programmed control</td>
 <td class="price">$60,000 MXN</td>
 </tr>
 
 <tr>
-<td>Custom Projects</td>
-<td>Full system integration</td>
+<td>Customized Projects</td>
+<td>Full integration of mechanical, electrical and control systems</td>
 <td class="price">From $80,000 MXN</td>
 </tr>
+
 </table>
 </section>
 
-<!-- WHY -->
-<section class="section">
-<h2>WHY CHOOSE US</h2>
+<!-- PROJECTS -->
+<section class="section" id="projects">
+<h2>PROJECT EXPERIENCE / CASE STUDIES</h2>
+
+<div class="grid">
 
 <div class="card">
-<p><span class="check">✔</span> Turnkey automation solutions</p>
-<p><span class="check">✔</span> Technical audits and diagnostics</p>
-<p><span class="check">✔</span> Full documentation included</p>
-<p><span class="check">✔</span> Scalable and innovative design</p>
+<h3>Nissan – Conveyor System Optimization</h3>
+
+<p><b>Problem:</b> Production delays due to inconsistent conveyor speed.</p>
+
+<p><b>Solution:</b> Modular conveyor with sensors and speed control.</p>
+
+<p><b>Features:</b><br>
+- Speed control<br>
+- Detection sensors<br>
+- Modular structure</p>
+
+<p><b>Results:</b><br>
+- Increased efficiency<br>
+- Reduced errors<br>
+- Continuous workflow</p>
+</div>
+
+<div class="card">
+<h3>Jatco – AGV Transport System</h3>
+
+<p><b>Problem:</b> Inefficient internal logistics.</p>
+
+<p><b>Solution:</b> Automated guided vehicle system.</p>
+
+<p><b>Features:</b><br>
+- Line navigation<br>
+- Obstacle detection<br>
+- Autonomous movement</p>
+
+<p><b>Results:</b><br>
+- Faster transport<br>
+- Less labor dependency<br>
+- Better workflow</p>
+</div>
+
 </div>
 </section>
 
@@ -199,7 +235,7 @@ Mechatech is focused on the design, development, and manufacturing of customized
 
 <div class="card">
 <h3>Developers</h3>
-<p>Technical support for independent engineers and prototypes.</p>
+<p>Support for independent engineers and prototypes.</p>
 </div>
 
 <div class="card">
@@ -219,46 +255,41 @@ Mechatech is focused on the design, development, and manufacturing of customized
 <div class="card">
 <b>Bryan Eduardo Lomeli Jauregui</b><br>
 <b>Role:</b> Systems Audit Responsible<br>
-<b>Description:</b> Analyzes infrastructure and identifies automation improvements.<br>
-<b>Skills:</b> Analysis, documentation, communication.<br>
-<b>Knowledge:</b> Industrial processes, flowcharts, control basics.<br>
-<b>Experience:</b> Academic projects and internships.
+<b>Skills:</b> Analysis, documentation, communication<br>
+<b>Knowledge:</b> Industrial processes, flowcharts, automation basics<br>
+<b>Experience:</b> Academic projects and internships
 </div>
 
 <div class="card">
 <b>Jose Alberto Silva Campos</b><br>
 <b>Role:</b> Machinery Design Responsible<br>
-<b>Description:</b> Mechanical design and system development.<br>
-<b>Skills:</b> CAD, design, teamwork.<br>
-<b>Knowledge:</b> Mechanics, sensors, actuators.<br>
-<b>Experience:</b> University design projects.
+<b>Skills:</b> CAD design, teamwork<br>
+<b>Knowledge:</b> Mechanics, sensors, actuators<br>
+<b>Experience:</b> University projects
 </div>
 
 <div class="card">
 <b>Abraham Pérez Velázquez</b><br>
 <b>Role:</b> Manufacturing Responsible<br>
-<b>Description:</b> Assembly and implementation of systems.<br>
-<b>Skills:</b> Tools, wiring, testing.<br>
-<b>Knowledge:</b> Manufacturing, diagrams.<br>
-<b>Experience:</b> Labs and workshops.
+<b>Skills:</b> Tools, wiring, testing<br>
+<b>Knowledge:</b> Manufacturing processes<br>
+<b>Experience:</b> Labs and workshops
 </div>
 
 <div class="card">
 <b>Ricardo Jetzrael Diaz Cruz</b><br>
 <b>Role:</b> Control & Programming<br>
-<b>Description:</b> Automation programming and control systems.<br>
-<b>Skills:</b> PLC, logic, coding.<br>
-<b>Knowledge:</b> Control systems, sensors.<br>
-<b>Experience:</b> Academic automation projects.
+<b>Skills:</b> PLC, coding, logic<br>
+<b>Knowledge:</b> Control systems, sensors<br>
+<b>Experience:</b> Academic projects
 </div>
 
 <div class="card">
 <b>Luis Pedro González Martinez</b><br>
 <b>Role:</b> Documentation & Support<br>
-<b>Description:</b> Technical manuals and support.<br>
-<b>Skills:</b> Writing, communication.<br>
-<b>Knowledge:</b> Mechatronic systems.<br>
-<b>Experience:</b> Academic documentation.
+<b>Skills:</b> Writing, communication<br>
+<b>Knowledge:</b> Mechatronic systems<br>
+<b>Experience:</b> Academic documentation
 </div>
 
 </div>
