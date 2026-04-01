@@ -14,7 +14,6 @@ body {
     font-size: 18px;
 }
 
-/* NAV */
 nav {
     position: fixed;
     width: 100%;
@@ -23,7 +22,6 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
-    z-index: 1000;
 }
 
 nav a {
@@ -32,7 +30,6 @@ nav a {
     font-weight: bold;
 }
 
-/* HERO */
 .hero {
     padding: 100px 20px 40px;
     text-align: center;
@@ -66,11 +63,6 @@ nav a {
 
 h2 {
     color: #38bdf8;
-    font-size: 28px;
-}
-
-h3 {
-    color: #0ea5e9;
 }
 
 footer {
@@ -87,10 +79,6 @@ footer {
     padding: 15px;
     border-radius: 50%;
 }
-
-.float img {
-    width: 30px;
-}
 </style>
 </head>
 
@@ -98,14 +86,15 @@ footer {
 
 <nav>
 <a href="#empresa">Empresa</a>
-<a href="#producto">Servicios</a>
+<a href="#producto">Productos</a>
 <a href="#equipo">Equipo</a>
+<a href="#clientes">Clientes</a>
+<a href="#ventajas">Ventajas</a>
 <a href="#contacto">Contacto</a>
 </nav>
 
 <section class="hero">
 <img src="logo.png" class="logo">
-<h1><b>MECATECH</b></h1>
 <p><b>Innovación en automatización y tecnología industrial</b></p>
 </section>
 
@@ -113,25 +102,47 @@ footer {
 <section class="section" id="empresa">
 <h2><b>Información de la Empresa</b></h2>
 
-<p><b>Mecatech</b> es una empresa enfocada en el desarrollo de soluciones tecnológicas en el área de la mecatrónica, integrando conocimientos de mecánica, electrónica y programación para resolver problemas industriales.</p>
+<p><b>Mecatech</b> es una empresa dedicada al desarrollo de soluciones tecnológicas en el área de la mecatrónica, integrando mecánica, electrónica y programación para resolver problemas industriales.</p>
 
-<p><b>Misión:</b> Desarrollar soluciones tecnológicas innovadoras que mejoren la eficiencia de los procesos industriales.</p>
-
-<p><b>Visión:</b> Ser una empresa líder en automatización y desarrollo tecnológico.</p>
-
-<p><b>Valores:</b> Innovación, compromiso, calidad, responsabilidad y trabajo en equipo.</p>
-
+<p><b>Misión:</b> Desarrollar soluciones innovadoras que mejoren la eficiencia industrial.</p>
+<p><b>Visión:</b> Ser líderes en automatización tecnológica.</p>
+<p><b>Valores:</b> Innovación, calidad, compromiso, responsabilidad.</p>
 <p><b>Ubicación:</b> Aguascalientes, México.</p>
 </section>
 
-<!-- SERVICIOS -->
+<!-- PRODUCTOS -->
 <section class="section" id="producto">
-<h2><b>Servicios</b></h2>
+<h2><b>Productos y Servicios</b></h2>
 
 <div class="grid">
-<div class="card"><b>Automatización Industrial</b><br>Optimización de procesos industriales.</div>
-<div class="card"><b>Electrónica</b><br>Desarrollo y reparación de circuitos.</div>
-<div class="card"><b>Diseño Mecánico</b><br>Creación de estructuras y mecanismos.</div>
+
+<div class="card">
+<b>Automatización Industrial</b><br><br>
+<b>Características:</b> Implementación de sistemas automáticos.<br>
+<b>Ventajas:</b> Reduce errores y mejora productividad.<br>
+<b>Precio:</b> Variable según proyecto.<br>
+<b>Servicios extra:</b> mantenimiento y soporte.<br>
+<b>Políticas:</b> entrega puntual y garantía de calidad.
+</div>
+
+<div class="card">
+<b>Electrónica</b><br><br>
+<b>Características:</b> Diseño y reparación de circuitos.<br>
+<b>Ventajas:</b> Soluciones rápidas y eficientes.<br>
+<b>Precio:</b> Accesible.<br>
+<b>Servicios extra:</b> diagnóstico técnico.<br>
+<b>Políticas:</b> revisión previa y garantía.
+</div>
+
+<div class="card">
+<b>Diseño Mecánico</b><br><br>
+<b>Características:</b> Diseño de piezas y maquinaria.<br>
+<b>Ventajas:</b> Adaptado a necesidades del cliente.<br>
+<b>Precio:</b> Según complejidad.<br>
+<b>Servicios extra:</b> asesoría técnica.<br>
+<b>Políticas:</b> cumplimiento de requisitos.
+</div>
+
 </div>
 </section>
 
@@ -139,75 +150,50 @@ footer {
 <section class="section" id="equipo">
 <h2><b>Equipo de Trabajo</b></h2>
 
+<p>Equipo multidisciplinario con conocimientos en electrónica, mecánica y programación.</p>
+
 <div class="grid">
-
-<div class="card">
-<h3><b>Systems Audit Responsible</b></h3>
-<p><b>Lomeli Jauregui Bryan Eduardo</b></p>
-<p>Analyzes infrastructure and identifies automation opportunities.</p>
-
-<p><b>Skills:</b><br>
-- Industrial process basics<br>
-- Technical analysis<br>
-- Flowcharts and reports<br>
-- Communication</p>
-
-<p><b>Experience:</b> Academic and internships.</p>
+<div class="card"><b>Silva Campos Jose Alberto</b><br>Diseño mecánico</div>
+<div class="card"><b>Lomeli Jauregui Bryan</b><br>Auditoría de sistemas</div>
+<div class="card"><b>Pérez Velázquez Abraham</b><br>Manufactura</div>
+<div class="card"><b>Diaz Cruz Ricardo</b><br>Programación</div>
+<div class="card"><b>González Martinez Luis</b><br>Documentación</div>
 </div>
+</section>
 
-<div class="card">
-<h3><b>Machinery Design Responsible</b></h3>
-<p><b>Silva Campos Jose Alberto</b></p>
-<p>Design of machinery and mechanical systems.</p>
+<!-- CLIENTES -->
+<section class="section" id="clientes">
+<h2><b>Clientes y Mercado</b></h2>
 
-<p><b>Skills:</b><br>
-- CAD design<br>
-- Mechanical systems<br>
-- Sensors and actuators</p>
+<p><b>Mercado objetivo:</b> Empresas, talleres e industrias que buscan mejorar sus procesos.</p>
 
-<p><b>Experience:</b> University projects.</p>
-</div>
+<p><b>Problemas que resolvemos:</b></p>
+<ul>
+<li>Procesos manuales ineficientes</li>
+<li>Fallas en maquinaria</li>
+<li>Baja productividad</li>
+</ul>
 
-<div class="card">
-<h3><b>Manufacturing Responsible</b></h3>
-<p><b>Pérez Velázquez Abraham</b></p>
-<p>Assembly and manufacturing of systems.</p>
+<p><b>Ejemplos de clientes:</b></p>
+<ul>
+<li>Talleres mecánicos</li>
+<li>Pequeñas industrias</li>
+<li>Proyectos escolares</li>
+</ul>
 
-<p><b>Skills:</b><br>
-- Workshop tools<br>
-- Electrical wiring<br>
-- Technical diagrams</p>
+<p><b>Opinión:</b> "Servicio confiable y eficiente."</p>
+</section>
 
-<p><b>Experience:</b> Labs and workshops.</p>
-</div>
+<!-- VENTAJAS -->
+<section class="section" id="ventajas">
+<h2><b>Ventajas Competitivas</b></h2>
 
-<div class="card">
-<h3><b>Control & Programming</b></h3>
-<p><b>Diaz Cruz Ricardo Jetzrael</b></p>
-<p>Programming and automation control systems.</p>
-
-<p><b>Skills:</b><br>
-- PLC & microcontrollers<br>
-- Control logic<br>
-- Sensors integration</p>
-
-<p><b>Experience:</b> Academic projects.</p>
-</div>
-
-<div class="card">
-<h3><b>Documentation & Support</b></h3>
-<p><b>González Martinez Luis Pedro</b></p>
-<p>Technical documentation and support.</p>
-
-<p><b>Skills:</b><br>
-- Technical writing<br>
-- User manuals<br>
-- Client support</p>
-
-<p><b>Experience:</b> Academic documentation.</p>
-</div>
-
-</div>
+<ul>
+<li>Precios accesibles</li>
+<li>Soluciones personalizadas</li>
+<li>Atención directa</li>
+<li>Innovación tecnológica</li>
+</ul>
 </section>
 
 <!-- CONTACTO -->
@@ -215,7 +201,6 @@ footer {
 <h2><b>Contacto</b></h2>
 
 <p><b>Tel:</b> 4494015501</p>
-<p><b>Email:</b> contacto@mecatech.com</p>
 
 <a href="https://wa.me/524494015501" style="color:#25D366;">
 <b>Enviar mensaje por WhatsApp</b>
@@ -223,7 +208,7 @@ footer {
 </section>
 
 <a href="https://wa.me/524494015501" class="float">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30">
 </a>
 
 <footer>
