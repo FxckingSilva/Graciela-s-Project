@@ -1,189 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mecatech</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: "Times New Roman", serif;
-    background: #020617;
-    color: #e2e8f0;
-    font-size: 22px;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    background: #0ea5e9;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    z-index: 1000;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    padding: 120px 20px 60px;
-    text-align: center;
-}
-
-.logo { width: 180px; }
-
-.hero-text {
-    font-size: 70px;
-    margin-top: 20px;
-    color: #38bdf8;
-    text-shadow: 0 0 20px #0ea5e9;
-}
-
-.section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: auto;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 1s;
-}
-
-.section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-h2 {
-    border-left: 8px solid #0ea5e9;
-    padding-left: 15px;
-    color: #38bdf8;
-    font-size: 40px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    background: #0ea5e9;
-    color: white;
-    padding: 15px;
-}
-
-td {
-    padding: 15px;
-    border-bottom: 1px solid #334155;
-}
-
-.price {
-    color: #38bdf8;
-    font-weight: bold;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-    gap: 25px;
-}
-
-.card {
-    background: #0f172a;
-    padding: 25px;
-    border-radius: 15px;
-    border: 1px solid #0ea5e9;
-    transition: 0.4s;
-}
-
-.card:hover {
-    transform: scale(1.05) translateY(-10px);
-    box-shadow: 0 0 20px #0ea5e9;
-}
-
-.float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-<a href="#about">About</a>
-<a href="#mission">MVV</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#market">Market</a>
-<a href="#team">Team</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<section class="hero">
-<img src="logo.png" class="logo">
-<p class="hero-text"><b>Innovation in Automation and Industrial Technology</b></p>
-</section>
-
-<section class="section" id="about">
-<h2>ABOUT MECHATECH</h2>
-<div class="card">
-Mechatech specializes in automation solutions integrating mechanics, electronics, and control systems.
-</div>
-</section>
-
-<section class="section" id="mission">
-<h2>MISSION, VISION & VALUES</h2>
-<div class="grid">
-<div class="card"><h3>MISSION</h3>Develop automation solutions.</div>
-<div class="card"><h3>VISION</h3>Be industry leaders.</div>
-<div class="card"><h3>VALUES</h3>Innovation, teamwork, quality.</div>
-</div>
-</section>
-
-<section class="section" id="services">
-<h2>SOLUTIONS & SERVICES</h2>
-<table>
-<tr><th>Project</th><th>Features</th><th>Price</th></tr>
-<tr><td>Conveyor</td><td>Automation</td><td class="price">$35,000</td></tr>
-<tr><td>AGV</td><td>Navigation</td><td class="price">$55,000</td></tr>
-<tr><td>Robot</td><td>Control</td><td class="price">$60,000</td></tr>
-<tr><td>Custom</td><td>Full integration</td><td class="price">$80,000+</td></tr>
-</table>
-</section>
-
-<section class="section" id="projects">
-<h2>PROJECT EXPERIENCE</h2>
-<div class="grid">
-<div class="card"><b>Nissan</b><br>Automation improvement</div>
-<div class="card"><b>Jatco</b><br>AGV system</div>
-</div>
-</section>
-
-<section class="section" id="market">
-<h2>MARKET</h2>
-<div class="grid">
-<div class="card">Education</div>
-<div class="card">Developers</div>
-<div class="card">Industry</div>
-</div>
-</section>
-
-<!-- TEAM MEJORADO -->
 <section class="section" id="team">
 <h2>TEAM</h2>
 
@@ -192,77 +6,57 @@ Mechatech specializes in automation solutions integrating mechanics, electronics
 <div class="card">
 <b>Bryan Eduardo Lomeli Jauregui</b><br>
 <b>Role:</b> Systems Audit Responsible<br>
-<b>Description:</b> Responsible for analyzing client infrastructure and identifying automation opportunities.<br>
-<b>Skills:</b> Analysis, documentation, communication, reporting<br>
-<b>Knowledge:</b> Industrial processes, flowcharts, automation basics<br>
-<b>Experience:</b> Academic projects and internships<br>
-<b>Additional:</b> Strong ability to detect inefficiencies and propose improvements
+<b>Description:</b> Analyzes the client’s current infrastructure, reviews existing processes, and identifies automation improvement opportunities.<br>
+<b>Skills:</b> Analytical thinking, technical documentation, communication with clients, problem identification, reporting<br>
+<b>Knowledge:</b> Industrial processes, automation basics, flowcharts, technical reports, system evaluation<br>
+<b>Experience:</b> Academic projects, university practices, and internships<br>
+<b>Responsibilities:</b> Process analysis, inefficiency detection, improvement proposals, system evaluation<br>
+<b>Strengths:</b> Critical thinking and ability to understand complex systems
 </div>
 
 <div class="card">
 <b>Jose Alberto Silva Campos</b><br>
 <b>Role:</b> Machinery Design Responsible<br>
-<b>Description:</b> Designs mechanical systems and ensures functional integration.<br>
-<b>Skills:</b> CAD, teamwork, problem solving<br>
-<b>Knowledge:</b> Mechanics, actuators, sensors<br>
-<b>Experience:</b> University design projects<br>
-<b>Additional:</b> Focus on efficient and innovative mechanical solutions
+<b>Description:</b> Responsible for the mechanical and conceptual design of machinery, ensuring it meets technical and functional requirements.<br>
+<b>Skills:</b> CAD design (SolidWorks, Fusion 360), teamwork, problem solving, design thinking<br>
+<b>Knowledge:</b> Mechanical design, actuators, sensors, mechanisms, technical requirements interpretation<br>
+<b>Experience:</b> Academic design projects, prototyping, university work, internships<br>
+<b>Responsibilities:</b> Mechanical design, system modeling, component selection, design validation<br>
+<b>Strengths:</b> Creativity and innovation in mechanical solutions
 </div>
 
 <div class="card">
 <b>Abraham Pérez Velázquez</b><br>
 <b>Role:</b> Manufacturing Responsible<br>
-<b>Description:</b> Builds and assembles mechanical systems.<br>
-<b>Skills:</b> Tools, wiring, testing<br>
-<b>Knowledge:</b> Manufacturing, diagrams<br>
-<b>Experience:</b> Workshops and labs<br>
-<b>Additional:</b> Ensures functionality and reliability of systems
+<b>Description:</b> In charge of assembling, manufacturing, and commissioning the designed machinery.<br>
+<b>Skills:</b> Tool handling, assembly, wiring, testing, troubleshooting<br>
+<b>Knowledge:</b> Manufacturing processes, electrical connections, diagrams, workshop practices<br>
+<b>Experience:</b> Laboratory practices, workshops, academic projects, internships<br>
+<b>Responsibilities:</b> Assembly, system integration, testing, adjustments, commissioning<br>
+<b>Strengths:</b> Practical skills and attention to detail in system implementation
 </div>
 
 <div class="card">
 <b>Ricardo Jetzrael Diaz Cruz</b><br>
-<b>Role:</b> Control & Programming<br>
-<b>Description:</b> Develops control logic and automation systems.<br>
-<b>Skills:</b> PLC, coding, logic<br>
-<b>Knowledge:</b> Control systems, sensors<br>
-<b>Experience:</b> Academic automation projects<br>
-<b>Additional:</b> Integrates hardware with software systems
+<b>Role:</b> Control and Programming Responsible<br>
+<b>Description:</b> Responsible for programming controllers, implementing control logic, and integrating sensors and actuators.<br>
+<b>Skills:</b> PLC programming, microcontrollers, logical thinking, debugging<br>
+<b>Knowledge:</b> Control systems, automation logic, sensors integration, actuators, programming basics<br>
+<b>Experience:</b> Academic projects, automation practices, coursework<br>
+<b>Responsibilities:</b> Programming, control logic implementation, system integration, testing<br>
+<b>Strengths:</b> Logical thinking and system integration capability
 </div>
 
 <div class="card">
 <b>Luis Pedro González Martinez</b><br>
-<b>Role:</b> Documentation & Support<br>
-<b>Description:</b> Creates manuals and supports implementation.<br>
-<b>Skills:</b> Writing, communication<br>
-<b>Knowledge:</b> Mechatronic systems<br>
-<b>Experience:</b> Documentation projects<br>
-<b>Additional:</b> Ensures clear communication with clients
+<b>Role:</b> Documentation and Technical Support Responsible<br>
+<b>Description:</b> Responsible for creating technical documentation, user manuals, and providing support during project delivery.<br>
+<b>Skills:</b> Technical writing, communication, documentation, organization<br>
+<b>Knowledge:</b> Mechatronic systems, manuals creation, reporting, user guidance<br>
+<b>Experience:</b> Academic documentation, reports, project presentations<br>
+<b>Responsibilities:</b> Documentation, manuals, client support, project handover<br>
+<b>Strengths:</b> Clear communication and structured documentation
 </div>
 
 </div>
 </section>
-
-<section class="section" id="contact">
-<h2>CONTACT</h2>
-<p>4494015501</p>
-<p><a href="mailto:mecatech@gmail.com">Email</a></p>
-</section>
-
-<footer>
-<p>© 2026 Mecatech</p>
-</footer>
-
-<script>
-const sections = document.querySelectorAll(".section");
-window.addEventListener("scroll", () => {
-    const trigger = window.innerHeight * 0.85;
-    sections.forEach(sec => {
-        if(sec.getBoundingClientRect().top < trigger){
-            sec.classList.add("show");
-        }
-    });
-});
-</script>
-
-</body>
-</html>
